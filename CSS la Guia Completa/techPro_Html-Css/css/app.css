@@ -1,0 +1,32 @@
+:root {
+  /* colors */
+  --primary: #1073ba;
+  --secondary: #00da55;
+  --gris: #3b3b3b;
+  --blanco: #ffffff;
+  --negro: #1f1e1e;
+  --grisClaro: #e1e1e1;
+
+  --separacion: 5rem;
+
+  /* fonts */
+  --mainFont: "Lato", sans-serif;
+  --subFont: "Roboto", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primary);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}

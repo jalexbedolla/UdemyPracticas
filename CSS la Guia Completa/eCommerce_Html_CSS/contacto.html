@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather:wght@300&family=Playfair+Display&family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="nombre-sitio">
+      <h1>Muebles <span> Acme </span></h1>
+    </header>
+
+    <!-- navbar -->
+    <div class="nav-container">
+      <nav class="main-nav container">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+    <main class="contenido-principal container">
+      <h2 class="text-center">Contacto</h2>
+
+      <form action="" class="formulario">
+        <fieldset>
+          <legend>Tus Datos</legend>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              placeholder="Tu Nombre Aqui"
+              id="nombre"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="asunto">Asunto</label>
+            <input
+              type="text"
+              placeholder="Tu Problema aqui"
+              id="asunto"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" placeholder="email" id="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="tel">Telefono</label>
+            <input type="tel" placeholder="telefono" id="tel" required />
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pais</legend>
+
+          <div class="campo">
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais">
+              <option value="">-- Seleccione --</option>
+              <option value="MX">Mexico</option>
+              <option value="CO">Colombia</option>
+              <option value="PR">Peru</option>
+              <option value="AR">Argentina</option>
+              <option value="CL">Chile</option>
+              <option value="ES">España</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informacion Extra</legend>
+
+          <div class="campo">
+            <label for="cliente">Cliente</label>
+            <input type="radio" name="tipo" id="cliente" value="cliente" />
+          </div>
+
+          <div class="campo">
+            <label for="provedor">Provedor</label>
+            <input type="radio" name="tipo" id="provedor" value="provedor" />
+          </div>
+
+          <div class="campo">
+            <label for="categoria">Categoria</label>
+            <input list="categorias" name="categorias" />
+            <datalist id="categorias">
+              <option value="Cocina"></option>
+              <option value="Oficina"></option>
+              <option value="Jardín"></option>
+              <option value="Cochera"></option>
+              <option value="Dormitorios"></option>
+            </datalist>
+          </div>
+        </fieldset>
+        <input type="submit" value="Enviar" class="btn btn-formulario" />
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="grid-footer container">
+        <div>
+          <h3>Categorías</h3>
+
+          <nav class="footer-menu">
+            <a href="#">Cocina</a>
+            <a href="#">Oficina</a>
+            <a href="#">Jardín</a>
+            <a href="#">Cochera</a>
+            <a href="#">Dormitorios</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Sobre Nosotros</h3>
+          <nav class="footer-menu">
+            <a href="#">Nuestra Historia</a>
+            <a href="#">Misión, Visión y Valores</a>
+            <a href="#">Carreras</a>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos del Servicio</a>
+          </nav>
+        </div>
+
+        <div>
+          <h3>Soporte</h3>
+          <nav class="footer-menu">
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="#">Ayuda en línea</a>
+            <a href="#">Confianza y Seguridad</a>
+          </nav>
+        </div>
+      </div>
+      <p class="copyright">Todos los derechos Reservados. Muebles Acme</p>
+    </footer>
+  </body>
+</html>
