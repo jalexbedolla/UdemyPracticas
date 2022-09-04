@@ -354,6 +354,11 @@ img {
   margin-top: 4rem;
   padding-top: 4rem;
 }
+@media (min-width: 768px) {
+  .site-footer {
+    align-items: center;
+  }
+}
 
 .site-footer h3 {
   margin-bottom: 0.5rem;
@@ -394,6 +399,9 @@ img {
 .copyright {
   margin-top: 10rem;
   text-align: center;
+  border-bottom: 1px solid #233d4d;
+  max-width: 120rem;
+  margin-inline: auto;
 }
 
 .contenido-nosotros {
