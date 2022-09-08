@@ -1,7 +1,7 @@
 :root {
   /** colors **/
   --primary: #00d7ff;
-  --secondary: #00da55;
+  --secondary: #fb6b90;
   --gris: #3b3b3b;
   --blanco: #ffffff;
   --negro: #1f1e1e;
@@ -187,8 +187,8 @@ img {
       var(--primary) 0%
     ),
     url(../img/imagen-mujer.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: repeat, no-repeat;
   background-size: 100%, 120rem;
 }
 @media (min-width: 768px) {
@@ -200,6 +200,7 @@ img {
       ),
       url(../img/imagen-mujer.jpg);
     background-repeat: repeat, no-repeat;
+    background-size: 100%, 100%;
   }
 }
 
