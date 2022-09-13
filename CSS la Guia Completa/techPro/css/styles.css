@@ -12,8 +12,9 @@
   --separacion: 5rem;
 
   /** fonts **/
-  --mainFont: "Lato", sans-serif;
+  --mainFont: "Merriweather", serif;
   --subFont: "Roboto", sans-serif;
+  --span: "Qwitcher Grypen", cursive;
 }
 
 html {
@@ -30,7 +31,7 @@ html {
 
 /** body font **/
 body {
-  font-family: var(--primary);
+  font-family: var(--subFont);
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -42,7 +43,6 @@ body {
   margin: 0 auto;
 }
 
-h1,
 h2,
 h3 {
   font-family: var(--subFont);
@@ -51,7 +51,7 @@ h3 {
 }
 
 h1 {
-  font-size: 4.4rem;
+  font-family: var(--span);
 }
 
 h2 {
@@ -82,16 +82,44 @@ img {
   background-clip: text;
 }
 
+.degradado-verde span {
+  font-size: 2rem;
+  font-family: var(--mainFont);
+}
+@media (min-width: 768px) {
+  .degradado-verde span {
+    font-size: 2.8rem;
+    font-family: var(--mainFont);
+  }
+}
+@media (min-width: 992px) {
+  .degradado-verde span {
+    font-size: 4rem;
+    font-family: var(--mainFont);
+  }
+}
+
 /** header **/
 .header {
   background-color: var(--negro);
   padding: calc(var(--separacion) * 3) 0;
   color: var(--blanco);
 }
+@media (min-width: 768px) {
+  .imagen-header {
+    padding-left: 8rem;
+  }
+}
+
 @media (min-width: 992px) {
   .contenido-header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imagen-header {
+    padding-top: 10rem;
+    padding-left: 0rem;
   }
 }
 
@@ -101,7 +129,7 @@ img {
 }
 @media (min-width: 992px) {
   .texto-header {
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,17 +147,23 @@ img {
 }
 @media (min-width: 992px) {
   .tagline-producto {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 
 .nombre-producto {
-  font-size: 6.5rem;
+  font-size: 10rem;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .nombre-producto {
+    font-size: 15rem;
+    margin: 0;
+  }
 }
 @media (min-width: 992px) {
   .nombre-producto {
-    font-size: 10rem;
+    font-size: 20rem;
     line-height: 1;
   }
 }
@@ -139,13 +173,13 @@ img {
 }
 
 .precio-producto span {
-  font-size: 6rem;
+  font-size: 3.4rem;
   font-weight: 900;
 }
 
 /** iconos **/
 .iconos {
-  padding: calc(var(--separacion) * 2) 0;
+  padding: var(--separacion) 0;
 }
 @media (min-width: 992px) {
   .iconos {
@@ -167,6 +201,20 @@ img {
   .icono {
     margin: 0;
   }
+
+  .icono .sonido {
+    padding-top: 4.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icono {
+    margin: 0;
+  }
+
+  .icono .sonido {
+    padding-top: 0rem;
+  }
 }
 
 .icono img {
@@ -182,27 +230,140 @@ img {
 
 /** about pro **/
 .sobre-tech {
+  background-position: center, top center;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 80rem;
+}
+
+.notavif.notwebp .sobre-tech {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
       var(--primary) 0%
     ),
     url(../img/woman1.jpg);
-  background-position: center, top center;
-  background-repeat: repeat, no-repeat;
-  background-size: 100%, 80rem;
 }
+
+.webp .sobre-tech {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primary) 0%
+    ),
+    url(../img/woman1.webp);
+}
+
+.avif .sobre-tech {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primary) 0%
+    ),
+    url(../img/woman1.avif);
+}
+
 @media (min-width: 992px) {
   .sobre-tech {
+    background-repeat: no-repeat;
+    background-position: center, 10rem 0rem;
+    background-size: 100%, 100rem;
+  }
+
+  .notavif.notwebp .sobre-tech {
     background-image: linear-gradient(
         to left,
         transparent 50%,
         var(--primary) 0%
       ),
       url(../img/woman1.jpg);
+  }
+
+  .webp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.webp);
+  }
+
+  .avif .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.avif);
+  }
+}
+
+@media (min-width: 1200px) {
+  .sobre-tech {
     background-repeat: no-repeat;
-    background-position: center, 40rem 0rem;
+    background-position: center, 30rem 0rem;
     background-size: 100%, 100rem;
+  }
+
+  .notavif.notwebp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.jpg);
+  }
+
+  .webp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.webp);
+  }
+
+  .avif .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.avif);
+  }
+}
+
+@media (min-width: 1400px) {
+  .sobre-tech {
+    background-repeat: no-repeat;
+    background-position: center, 90rem 0rem;
+    background-size: 100%, 100rem;
+  }
+
+  .notavif.notwebp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.jpg);
+  }
+
+  .webp .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.webp);
+  }
+
+  .avif .sobre-tech {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primary) 0%
+      ),
+      url(../img/woman1.avif);
   }
 }
 
@@ -332,35 +493,113 @@ img {
 }
 
 .modelo .precio {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 0;
 }
 
 /** newsletter **/
 .newsletter {
-  background-image: linear-gradient(
-      to bottom,
-      transparent 50%,
-      var(--blanco) 0%
-    ),
-    url(../img/1000.jpg);
   background-position: center, -30rem -25rem;
   background-repeat: no-repeat;
   background-size: 100%, 110rem;
   padding: 10rem 0;
 }
+
+.notavif.notwebp .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
+    url(../img/woman2.jpg);
+}
+
+.webp .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
+    url(../img/woman2.webp);
+}
+
+.avif .newsletter {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--blanco) 0%
+    ),
+    url(../img/woman2.avif);
+}
+
 @media (min-width: 992px) {
   .newsletter {
+    background-position: center, -24rem -10rem;
+    background-size: 100%, 110rem;
+    padding: 10rem 0;
+  }
+
+  .notavif.notwebp .newsletter {
     background-image: linear-gradient(
         to right,
         transparent 50%,
         var(--blanco) 0%
       ),
-      url(../img/1000.jpg);
-    background-position: center, left;
+      url(../img/woman2.jpg);
+  }
+
+  .webp .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/woman2.webp);
+  }
+
+  .avif .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/woman2.avif);
+  }
+}
+
+@media (min-width: 1440px) {
+  .newsletter {
+    background-position: center, 0rem -10rem;
     background-size: 100%, 110rem;
     padding: 10rem 0;
+  }
+
+  .notavif.notwebp .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/woman2.jpg);
+  }
+
+  .webp .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/woman2.webp);
+  }
+
+  .avif .newsletter {
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        var(--blanco) 0%
+      ),
+      url(../img/woman2.avif);
   }
 }
 
@@ -404,7 +643,7 @@ img {
 }
 
 .footer p {
-  margin-top: 10rem;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
   color: var(--primary);
 }

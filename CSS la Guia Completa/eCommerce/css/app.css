@@ -69,7 +69,7 @@ img {
 }
 
 .btn {
-  background-color: #e94560;
+  background-color: #08cae3;
   display: block;
   color: #233d4d;
   text-transform: uppercase;
@@ -117,7 +117,7 @@ img {
 }
 
 .nombre-sitio span {
-  color: #ff2768;
+  color: #08cae3;
   font-family: "Shadows Into Light", cursive;
   font-size: 3.7rem;
 }
@@ -314,7 +314,7 @@ img {
 }
 
 .producto {
-  background-color: darkgray;
+  background-color: #05e0e9;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -494,12 +494,12 @@ img {
 }
 
 .formulario fieldset {
-  border: 1px solid #233d4d;
+  border: 1px solid #08cae3;
   margin-bottom: 2rem;
 }
 
 .formulario legend {
-  background-color: #233d4d;
+  background-color: #08cae3;
   color: white;
   padding: 0.5rem;
   width: 50%;
@@ -520,7 +520,7 @@ img {
 .campo textarea,
 .campo select {
   flex: 1;
-  border: 1px solid #e1e1e1;
+  border: 1px solid #08cae3;
   padding: 1rem;
 }
 
