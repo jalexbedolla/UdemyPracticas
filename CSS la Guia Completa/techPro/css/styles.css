@@ -187,7 +187,7 @@ img {
 }
 
 .icono h3 {
-  color: var(--blue);
+  color: var(--turquoise);
   text-transform: uppercase;
   margin-top: calc(var(--separacion) / 2);
   font-weight: 900;
@@ -205,7 +205,7 @@ img {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
-      var(--primary) 0%
+      var(--turquoise) 0%
     ),
     url(../img/woman1.jpg);
 }
@@ -214,7 +214,7 @@ img {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
-      var(--primary) 0%
+      var(--turquoise) 0%
     ),
     url(../img/woman1.webp);
 }
@@ -223,7 +223,7 @@ img {
   background-image: linear-gradient(
       to bottom,
       transparent 50%,
-      var(--primary) 0%
+      var(--turquoise) 0%
     ),
     url(../img/woman1.avif);
 }
@@ -239,7 +239,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.jpg);
   }
@@ -248,7 +248,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.webp);
   }
@@ -257,7 +257,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.avif);
   }
@@ -274,7 +274,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.jpg);
   }
@@ -283,7 +283,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.webp);
   }
@@ -292,7 +292,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.avif);
   }
@@ -309,7 +309,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.jpg);
   }
@@ -318,7 +318,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.webp);
   }
@@ -327,7 +327,7 @@ img {
     background-image: linear-gradient(
         to left,
         transparent 50%,
-        var(--primary) 0%
+        var(--turquoise) 0%
       ),
       url(../img/woman1.avif);
   }
@@ -376,7 +376,7 @@ img {
 }
 
 .header-modelos {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-bottom: var(--separacion);
 }
 
@@ -401,7 +401,7 @@ img {
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 15rem;
-  color: var(--red);
+  color: var(--turquoise);
   min-height: 20rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
@@ -420,13 +420,13 @@ img {
 }
 
 .modelo h3 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 .modelo-z {
-  background-color: var(--red);
+  background-color: var(--turquoise);
   background-image: url(../img/modelo-z.svg);
-  color: var(--blue);
+  color: var(--blanco);
 }
 
 @media (min-width: 992px) {
@@ -436,9 +436,11 @@ img {
     margin-bottom: 0;
     background-size: 45%;
   }
-  /* .modelo-z h3 {
-    font-size: 5.5rem;
-  } */
+
+  .modelo-z:hover {
+    transform: scale(1.1);
+    background-size: 150%;
+  }
 }
 
 .modelo-y {
@@ -451,7 +453,6 @@ img {
 
 .modelo .precio {
   font-size: 3rem;
-  font-weight: 900;
   line-height: 0;
 }
 
@@ -584,14 +585,14 @@ img {
 .formulario input[type="text"] {
   width: 100%;
   padding: 1rem;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--turquoise);
 }
 
 .formulario input[type="submit"] {
   width: 100%;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: var(--primary);
+  background-color: var(--turquoise);
   color: var(--blanco);
   font-size: 2rem;
   font-weight: 900;
@@ -601,6 +602,6 @@ img {
 .footer p {
   text-align: center;
   font-size: 1.5rem;
-  color: var(--primary);
+  color: var(--turquoise);
   padding: 2rem 0;
 }
