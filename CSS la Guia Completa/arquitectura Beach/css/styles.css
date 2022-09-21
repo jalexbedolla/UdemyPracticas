@@ -3,6 +3,7 @@
   --blanco: #fff;
   --negro: #111111;
   --gris: #343a40;
+  --orange: #f64307;
 
   --mainFont: "Raleway", sans-serif;
 }
@@ -84,49 +85,46 @@ img {
 
 /** header */
 .header {
-  background-image: url(../img/h.webp);
-  min-height: 60rem;
-  background-position: center;
+  background-image: url(../img/hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom center;
+  min-height: 60rem;
   padding: 5rem 0;
-}
-
-@media (min-width: 768px) {
-  .header {
-    padding: 2rem 0;
-  }
 }
 
 .contenido-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(60rem - 4rem);
-  color: var(--blanco);
+  min-height: calc(60rem - 4rem);
+  color: var(--orange);
+}
+
+.header a {
+  color: var(--orange);
 }
 
 .nombre-sitio {
-  font-weight: 300;
+  text-align: center;
   font-size: 2.5rem;
+  font-weight: 300;
 }
-@media (min-width: 768px) {
+
+.nombre-sitio span {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
   .nombre-sitio {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
-@media (min-width: 992px) {
+
+@media (min-width: 1400px) {
   .nombre-sitio {
     font-size: 4rem;
   }
-}
-@media (min-width: 1200) {
-  .nombre-sitio {
-    font-size: 5rem;
-  }
-}
-.nombre-sitio span {
-  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -148,6 +146,72 @@ img {
   }
 }
 
-.header a {
-  color: var(--blanco);
+.telefono {
+  display: flex;
+}
+
+.telefono::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../img/telefono.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 1rem;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
+
+.navegacion a {
+  padding: 0.5rem;
+  transition: background-color 300ms;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .navegacion a {
+    padding: 0.3rem 1rem;
+  }
+}
+
+.navegacion a:hover {
+  background-color: rgb(233 150 122 / 0.5);
+  border-radius: 3px;
+  color: var(--gris);
+}
+
+.slogan {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .slogan {
+    text-align: right;
+  }
+}
+
+.slogan h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .slogan h1 {
+    font-size: 4rem;
+  }
+}
+
+.slogan p {
+  margin: 0;
+  line-height: 1;
 }
