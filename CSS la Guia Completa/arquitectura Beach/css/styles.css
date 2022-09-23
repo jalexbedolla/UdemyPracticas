@@ -24,7 +24,7 @@ html {
 body {
   font-family: var(--mainFont);
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 h1,
@@ -214,4 +214,29 @@ img {
 .slogan p {
   margin: 0;
   line-height: 1;
+}
+
+/** quienes somos */
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.contenido-nosotros {
+  background-color: var(--blanco);
+  color: var(--orange);
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    grid-column: 2 / 4;
+  }
 }
