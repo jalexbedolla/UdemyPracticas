@@ -41,28 +41,28 @@ const Formulario = () => {
           <input id='owner' type='text' placeholder='name owner' className=' border-2 w-full p-2 mt-2 placeholder-gray-600 rounded-md' />
         </div>
 
-        <v className='mb-5'>
+        <div className='mb-5'>
           <label htmlFor='email' className=' block text-violet-600 uppercase font-bold'>
             Email
           </label>
           <input id='email' type='email' placeholder='email owner' className=' border-2 w-full p-2 mt-2 placeholder-gray-600 rounded-md' />
-        </v>
+        </div>
 
-        <v className='mb-5'>
+        <div className='mb-5'>
           <label htmlFor='alta' className=' block text-violet-600 uppercase font-bold'>
             Fecha de Ingreso
           </label>
           <input id='alta' type='date' className=' border-2 w-full p-2 mt-2 placeholder-gray-600 rounded-md' />
-        </v>
+        </div>
 
-        <v className='mb-5'>
+        <div className='mb-5'>
           <label htmlFor='sintomas' className=' block text-violet-600 uppercase font-bold'>
             Sintomas
           </label>
           <textarea id='sintomas' className='border-2 w-full p-2 mt-2 placeholder-gray-600 rounded-md' placeholder='Sintomas' />
-        </v>
+        </div>
 
-        <input type='submit' className=' bg-violet-600 w-full p-3 text-white uppercase font-bold hover:bg-orange-700 transition-all' value='agregar' />
+        <input type='submit' className=' bg-violet-600 w-full p-3 text-white uppercase font-bold hover:bg-violet-800 transition-all' value='agregar' />
       </form>
     </div>
   )
