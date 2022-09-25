@@ -3,7 +3,7 @@ function Header () {
   return (
     <h1 className=' font-bold text-gray-600 text-5xl text-center md:w-2/3 mx-auto '>
       Seguimiento Pacientes {''}
-      <span className=' text-violet-600 '>Veterinaria</span>
+      <span className=' text-sky-500 '>Veterinaria</span>
     </h1>
   )
 }
