@@ -373,7 +373,7 @@ img {
 }
 
 .producto {
-  background-color: #05e0e9;
+  background-color: darksalmon;
   margin-bottom: 2rem;
 }
 @media (min-width: 992px) {

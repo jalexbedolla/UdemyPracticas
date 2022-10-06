@@ -4,6 +4,7 @@
   --negro: #111111;
   --gris: #343a40;
   --orange: #f64307;
+  --otro: #233d4d;
 
   --mainFont: "Raleway", sans-serif;
 }
@@ -25,6 +26,7 @@ body {
   font-family: var(--mainFont);
   font-size: 1.6rem;
   line-height: 1.2;
+  color: var(--orange);
 }
 
 h1,
@@ -48,7 +50,6 @@ h3 {
 
 a {
   text-decoration: none;
-  color: var(--negro);
 }
 
 img {
@@ -88,24 +89,24 @@ img {
 .header {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   min-height: 60rem;
   padding: 5rem 0;
 }
 /** img load */
 .notavif.notwebp .header {
-  background-image: url(../img/galeria/hero.jpg);
+  background-image: url(../img/h1invert.jpg);
 }
 .webp .header {
-  background-image: url(../img/galeria/hero.webp);
+  background-image: url(../img/h1invert.webp);
 }
 .avif .header {
-  background-image: url(../img/galeria/hero.avif);
+  background-image: url(../img/h1invert.avif);
 }
 
 @media (min-width: 1400px) {
   .header {
-    background-position: bottom center;
+    background-position: center;
   }
 }
 
@@ -190,6 +191,7 @@ img {
   transition: background-color 300ms;
   width: 100%;
   text-align: center;
+  color: var(--orange);
 }
 @media (min-width: 768px) {
   .navegacion a {
@@ -198,9 +200,9 @@ img {
 }
 
 .navegacion a:hover {
-  background-color: rgb(255 255 255 / 0.5);
+  background-color: rgba(153, 156, 159, 0.5);
   border-radius: 3px;
-  color: var(--gris);
+  color: var(--blanco);
 }
 
 .slogan {
@@ -223,6 +225,7 @@ img {
 }
 
 .slogan p {
+  color: lightseagreen;
   margin: 0;
   line-height: 1;
 }
@@ -243,7 +246,7 @@ img {
 
 .contenido-nosotros {
   background-color: var(--blanco);
- 
+
   padding: 5rem;
 }
 @media (min-width: 768px) {
@@ -371,7 +374,7 @@ img {
 
 /** footer */
 .footer {
-  background-image: url(../img/footer.avif);
+  background-image: url(../img/galeria/hero.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -382,9 +385,8 @@ img {
   justify-content: flex-end;
 }
 
-
 footer h1,
-a{
+a {
   color: var(--blanco);
 }
 
