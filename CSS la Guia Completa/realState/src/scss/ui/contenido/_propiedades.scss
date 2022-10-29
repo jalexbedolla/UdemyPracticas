@@ -21,11 +21,12 @@
 }
 
 .propiedad {
-  background-color: v.$blanco;
+  background-color: v.$grisClaro;
+  border-radius: 1rem;
 
   &__imagen {
     aspect-ratio: 10 / 6;
-    background-size: cover;
+    background-size: auto 150%;
     position: relative;
   }
 
@@ -35,6 +36,8 @@
       background-image:
       linear-gradient( to bottom, transparentize(v.$negro, 1%) 0%, transparentize( v.$negro, .3%) 100%),
       url($imagen);
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
     }
   }
 
@@ -48,7 +51,7 @@
   }
 
   &__contenido {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   
   &__texto {
@@ -64,8 +67,7 @@
     @include m.boton(v.$primario, v.$blanco);
     display: block;
     text-transform: uppercase;
+    padding: 1rem 0;
+    border-radius: .6rem;
   }
-
-
-
 }
