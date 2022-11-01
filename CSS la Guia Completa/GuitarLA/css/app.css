@@ -23,14 +23,14 @@ img {
   max-width: 100%;
 }
 
-[class*="__contenedor"] {
+[class*="contenedor"] {
   /* selector de atributo.. que no se te olvide pendejo */
   max-width: 120rem;
   margin: 0 auto;
   width: 95%;
 }
 
-[class*="__heading"] {
+[class*="heading"] {
   font-size: 4rem;
   text-align: center;
   font-weight: 900;
@@ -131,6 +131,7 @@ img {
   border-radius: 0.5rem;
 }
 
+/** modelo  */
 .modelo {
   color: var(--blanco);
   margin-top: 5rem;
@@ -252,15 +253,225 @@ img {
   color: var(--blanco);
 }
 
+.producto__descripcion {
+  max-width: 50%;
+  text-align: justify;
+}
+
+.producto__label {
+  margin-right: 1rem;
+  font-size: 2.2rem;
+}
+
+.producto__cantidad {
+  border: 1px solid var(--primary);
+}
+.producto__cantidad:focus-visible {
+  outline: 1px solid var(--primary);
+  border: none;
+}
+
+.producto__agregar--carrito {
+  display: block;
+  text-decoration: none;
+  color: var(--blanco);
+  border: none;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  background-color: var(--primary);
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.producto__agregar--carrito:hover {
+  background-color: var(--negro);
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+/** cursos  */
+
 .cursos {
   background-image: linear-gradient(
       to right,
-      rgb(0 0 0 / 0.7),
-      rgb(0 0 0 / 0.7)
+      rgb(0 0 0 / 0.6),
+      rgb(0 0 0 / 0.6)
     ),
     url(../img/cursos_bg.jpg);
   background-position: center;
   background-size: cover;
   margin-top: 10rem;
   padding: 10rem 0;
+}
+
+@media (min-width: 768px) {
+  .cursos__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+.cursos__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .cursos__contenido {
+    grid-column: 2 / 3;
+  }
+}
+
+.cursos__texto {
+  color: var(--blanco);
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.cursos__enlace {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--blanco);
+  border: 1px solid var(--primary);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.cursos__enlace:hover {
+  background-color: var(--primary);
+  color: var(--blanco);
+}
+
+/** blog */
+
+.blog__grid {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .blog__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .blog__grid--pagina {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.entrada {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.entrada__contenido {
+  padding: 2rem;
+}
+
+.entrada__titulo {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.entrada__fecha {
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+
+.entrada__enlace {
+  display: block;
+  text-decoration: none;
+  color: var(--negro);
+  border: 1px solid var(--primary);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+
+.entrada__enlace:hover {
+  background-color: var(--primary);
+  color: var(--blanco);
+}
+
+.entrada__texto {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/** footer */
+
+.footer {
+  margin-top: 5rem;
+  background-color: var(--negro);
+  padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .footer__contenido {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer__nav {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.footer__enlace {
+  font-size: 2.8rem;
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.footer__enlace:hover {
+  color: var(--primary);
+}
+
+.footer__copyright {
+  font-size: 2.8rem;
+  color: var(--blanco);
+  text-align: center;
+}
+
+/** nosotros  */
+.nosotros__grid {
+  display: grid;
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .nosotros__grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
